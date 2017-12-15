@@ -6,9 +6,6 @@ $(document).ready(function ()
 				placement : 'bottom'
 				
 			  });
-			 //скрытие сообщения возврата на главную страницу
-			$("#reg_return_rus").hide();  
-			$("#reg_return_eng").hide(); 
 			//переключение языка на индексной странице
 			$("#index_rus").attr('class','nav-link active');
 			$("#body_eng").hide();
