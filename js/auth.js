@@ -1,8 +1,5 @@
 $(document).ready(function ()
         {
-		//скрытие сообщения возврата на главную страницу
-		$("#auth_return_rus").hide();  
-		$("#auth_return_eng").hide(); 
 		//валидация на русском
 		$("#auth_form_rus").validate({
 					//правила для проверки
