@@ -1,11 +1,5 @@
 $(document).ready(function ()
         {
-			$('.alert').alert();
-			$('[data-toggle="popover"]').popover({
-				//Установление направления отображения popover
-				placement : 'bottom'
-				
-			  });
 			//переключение языка на индексной странице
 			$("#index_rus").attr('class','nav-link active');
 			$("#body_eng").hide();
