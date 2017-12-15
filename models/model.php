@@ -119,12 +119,11 @@ Class Model_Users {
 			return 'true';
 			}
 	}
-	public static function check_email($email) {
-		$select = array(
-            'where' => "email = '$email'" // условие
-        );
-		$model_users = new self($select); // создаем объект модели
-		$login = $model_users->getAllRows();
+	public function check_email($email) {
+		$db = $this->db;
+		$query=$db->query("SELECT * FROM users WHERE email='$email'");
+		$query->setFetchMode(PDO::FETCH_ASSOC);
+		$row=$query->fetch();
 		return $login;
 	}
 }
